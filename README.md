@@ -1,4 +1,5 @@
 1. Выбранная задача
+
 Цель работы — оценить эффективность трёх типов генеративных моделей (текст, изображение, речь) с применением стандартных метрик. Оценка проводилась по следующим критериям:
 
 Текстовые модели — BLEU и ROUGE
@@ -28,31 +29,48 @@ genai_eval/
 ├── requirements.txt
 └── README.md
 
+
 2.2. Используемые библиотеки
+
 Текст — nltk, rouge-score, sacrebleu
+
 Изображения — torch, torchvision, pytorch-fid
+
 Речь — pystoi, soundfile
+
 Общее — PyYAML для конфигов
 
+
 2.3. Основные функции оценки
+
 Текст
+
 compute_bleu(references, candidates)
+
 compute_rouge(references, candidates)
 
 Изображения
+
 compute_fid(real_path, fake_path)
 
 Речь
+
 compute_stoi(ref_path, deg_path)
+
 mos_placeholder()  # Комментарий о необходимости ручной оценки
 
 2.4. Автоматизация
+
 Запуск осуществляется через Makefile:
+
 make eval_text
+
 make eval_image
+
 make eval_speech
 
 Или напрямую:
+
 python main.py --config config.yaml --task text
 
 3. Результаты оценки
@@ -67,6 +85,7 @@ python main.py --config config.yaml --task text
 |                 | MOS       | —        | Требует субъективной оценки слушателей |
 
 4. Критерии оценки
+
 * Правильность — Метрики отработали корректно, результаты логично совпадают с субъективной оценкой 		тестовых данных.
 
 * Полнота — Покрыты базовые аспекты оценки: лексика/структура (текст), распределение признаков (изображения), разборчивость (речь).
