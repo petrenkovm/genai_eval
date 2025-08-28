@@ -9,7 +9,9 @@
 Модели речи — STOI (Short-Time Objective Intelligibility) и MOS (Mean Opinion Score, субъективная)
 
 2. Реализация
+
 2.1. Структура проекта
+
 genai_eval/
 ├── metrics/                 # Модули с вычислением метрик
 │   ├── text_metrics.py      # BLEU, ROUGE
