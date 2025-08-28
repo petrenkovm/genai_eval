@@ -1,0 +1,17 @@
+task_type: text  # text | image | speech
+
+# Для текстовых моделей
+references:
+  - "The cat sits on the mat."
+  - "A quick brown fox jumps over the lazy dog."
+candidates:
+  - "The cat is sitting on the mat."
+  - "The quick brown fox jumps over a lazy dog."
+
+# Для изобразительных моделей
+real_path: "./data/images/real"
+fake_path: "./data/images/fake"
+
+# Для речевых моделей
+ref_path: "./data/audio/reference.wav"
+deg_path: "./data/audio/generated.wav"

@@ -1,0 +1,16 @@
+# Виртуальные окружения
+venv/
+.env/
+
+# Кэш питона
+__pycache__/
+*.pyc
+
+# Данные
+/data/images/real/*
+/data/images/fake/*
+/data/audio/*
+
+# Разрешаем хранить README и тестовые заглушки
+!README.md
+!__init__.py

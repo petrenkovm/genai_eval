@@ -1,0 +1,11 @@
+nltk
+rouge-score
+sacrebleu
+torch
+torchvision
+torchaudio
+pytorch-fid
+pystoi
+soundfile
+pyyaml
+
