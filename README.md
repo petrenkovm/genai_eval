@@ -12,6 +12,7 @@
 
 2.1. Структура проекта
 
+<pre>
 genai_eval/
 ├── metrics/                 # Модули с вычислением метрик
 │   ├── text_metrics.py      # BLEU, ROUGE
@@ -30,7 +31,7 @@ genai_eval/
 ├── Makefile                 # Быстрый запуск команд
 ├── requirements.txt
 └── README.md
-
+</pre>
 
 2.2. Используемые библиотеки
 
